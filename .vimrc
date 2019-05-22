@@ -1,7 +1,7 @@
 set showmode
 set number
 nnoremap <F2> :set invpaste past?<CR>
-set pasttoggel=<F2>
+set pastetoggle=<F2>
 
 set expandtab
 set ts=4
