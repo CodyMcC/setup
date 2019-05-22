@@ -1,6 +1,6 @@
 set showmode
 set number
-nnoremap <F2> :set invpaste past?<CR>
+nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 
 set expandtab
