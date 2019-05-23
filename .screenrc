@@ -1,0 +1,13 @@
+# THIS IS THE PRETTY BIT
+#change the hardstatus settings to give an window list at the bottom of the
+##screen, with the time and date and with the current window highlighted
+term xterm-256color
+hardstatus             alwayslastline
+shell -$SHELL
+defscrollback 5000
+ 
+#termcapinfo xterm* ti@:te@ # allow scrollback on the Mac & xterm
+termcapinfo xterm-256color|xterm-color|xterm|xterms|xs|rxvt ti@:te@ # allow scrollback on the Mac & xterm
+ 
+#hardstatus string '%{= mK}%-Lw%{= KW}%50>%n%f* %t%{= mK}%+Lw%< %{= kG}%-=%D %d %M %Y %c:%s%{-}'
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{g}]'
